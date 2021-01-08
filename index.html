@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <title>rating</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3> Simple rating (CSS)</h3>
+        <form action="#">
+            <div class="rating">
+                <div class="rating__items">
+                    <input type="radio" class="rating__item" name="star" id="rating__item-5" value="5">
+                    <label for="rating__item-5" class="rating__item-label"></label>
+
+                    <input type="radio" class="rating__item" name="star" id="rating__item-4" value="4">
+                    <label for="rating__item-4" class="rating__item-label"></label>
+
+                    <input type="radio" class="rating__item" name="star" id="rating__item-3" value="3">
+                    <label for="rating__item-3" class="rating__item-label"></label>
+
+                    <input type="radio" class="rating__item" name="star" id="rating__item-2" value="2">
+                    <label for="rating__item-2" class="rating__item-label"></label>
+
+                    <input type="radio" class="rating__item" name="star" id="rating__item-1" value="1">
+                    <label for="rating__item-1" class="rating__item-label"></label>
+                </div>
+            </div>
+            <button class="btn" type="submit">send</button>
+        </form>
+
+        <h3>Rating + JS</h3>
+        <div class="rating-js">
+            <div class="rating-js__body">
+                <div class="rating-active"></div>
+                <div class="rating-js__items">
+                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__1" value="1">
+                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__2" value="2">
+                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__3" value="3">
+                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__4" value="4">
+                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__5" value="5">
+                </div>
+            </div>
+            <div class="rating-js__value">3.6</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
