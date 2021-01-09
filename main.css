@@ -133,13 +133,13 @@ body {
 }
 
 .rating__item:checked,
-.rating__item:checked ~ .rating__item-label {
+.rating__item:checked~.rating__item-label {
     color: rgb(255, 238, 0);
 }
 
 .rating__item-label:hover,
-.rating__item-label:hover ~ .rating__item-label,
-.rating__item-label:checked ~ .rating__item-label:hover {
+.rating__item-label:hover~.rating__item-label,
+.rating__item-label:checked~.rating__item-label:hover {
     color: yellow
 }
 
@@ -182,7 +182,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 0%;
     height: 100%;
     overflow: hidden;
 }

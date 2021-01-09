@@ -21,7 +21,7 @@
                     <input type="radio" class="rating__item" name="star" id="rating__item-4" value="4">
                     <label for="rating__item-4" class="rating__item-label"></label>
 
-                    <input type="radio" class="rating__item" name="star" id="rating__item-3" value="3">
+                    <input type="radio" class="rating__item" name="star" id="rating__item-3" checked value="3">
                     <label for="rating__item-3" class="rating__item-label"></label>
 
                     <input type="radio" class="rating__item" name="star" id="rating__item-2" value="2">
@@ -34,20 +34,23 @@
             <button class="btn" type="submit">send</button>
         </form>
 
-        <h3>Rating + JS</h3>
-        <div class="rating-js">
-            <div class="rating-js__body">
-                <div class="rating-active"></div>
-                <div class="rating-js__items">
-                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__1" value="1">
-                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__2" value="2">
-                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__3" value="3">
-                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__4" value="4">
-                    <input type="radio" class="rating-js__item" name="rating" id="rating-js__5" value="5">
+        <form action="#" class="form">
+            <h3>Rating + JS</h3>
+            <div class="rating-js rating__set">
+                <div class="rating-js__body">
+                    <div class="rating-active"></div>
+                    <div class="rating-js__items">
+                        <input type="radio" class="rating-js__item" id="rating-js__1" value="1" name="star">
+                        <input type="radio" class="rating-js__item" id="rating-js__2" value="2" name="star">
+                        <input type="radio" class="rating-js__item" id="rating-js__3" value="3" name="star">
+                        <input type="radio" class="rating-js__item" id="rating-js__4" value="4" name="star">
+                        <input type="radio" class="rating-js__item" id="rating-js__5" value="5" name="star">
+                    </div>
                 </div>
+                <div class="rating-js__value">4.6</div>
             </div>
-            <div class="rating-js__value">3.6</div>
-        </div>
+            <button type="submit" class="form_btn">send</button>
+        </form>
     </div>
     <script src="main.js"></script>
 </body>
