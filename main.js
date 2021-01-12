@@ -52,12 +52,28 @@ function initRatings(ratings) {
                 initConstRating(rating);
 
                 if (rating.dataset.ajax) {
-                    setRatingValue(element.value, rating)
+                    setRatingValue(element.value, rating);
                 } else {
                     ratingValue.innerHTML = index + 1;
                     widthOfActive();
                 }
             })
+
+            async function setRatingValue(value, rating) {
+                let response = await fetch("rating.json");
+
+                if (response.ok) { // если HTTP-статус в диапазоне 200-299
+                    // получаем тело ответа (см. про этот метод ниже)
+                    let json = await response.json();
+                    let result = json.newRating;
+                    ratingValue.innerHTML = result;
+                    setRatingValue();
+
+
+                } else {
+                    alert("Ошибка HTTP: " + response.status);
+                }
+            }
         }
     }
 }
